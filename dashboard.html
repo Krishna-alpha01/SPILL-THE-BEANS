@@ -1,0 +1,125 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard - Spill the Beans</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Nunito', sans-serif;
+      background: #0e0f1a;
+      color: #f0f0f0;
+    }
+    header {
+      background: #15172b;
+      padding: 1rem 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: #fc5c7d;
+    }
+    header nav a {
+      color: #9bb0ff;
+      text-decoration: none;
+      margin-left: 1rem;
+    }
+    .dashboard-container {
+      display: flex;
+      padding: 2rem;
+    }
+    .sidebar {
+      width: 220px;
+      background: #1a1c2e;
+      padding: 1rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.5);
+      margin-right: 2rem;
+    }
+    .sidebar h3 {
+      color: #6a82fb;
+      margin-top: 0;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+    .sidebar ul li {
+      margin: 1rem 0;
+    }
+    .sidebar ul li a {
+      color: #f0f0f0;
+      text-decoration: none;
+    }
+    .sidebar ul li a:hover {
+      color: #fc5c7d;
+    }
+    .main-panel {
+      flex-grow: 1;
+      background: #1b1d2e;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
+    .main-panel h2 {
+      color: #6a82fb;
+    }
+    .confession-box {
+      background: #2a2b45;
+      padding: 1rem;
+      border-radius: 8px;
+      margin-bottom: 2rem;
+    }
+    .confession-box textarea {
+      width: 100%;
+      padding: 1rem;
+      background: #0f101b;
+      border: none;
+      color: #eee;
+      border-radius: 6px;
+      font-size: 1rem;
+      resize: vertical;
+    }
+    .confession-box button {
+      margin-top: 1rem;
+      padding: 0.75rem 1.5rem;
+      background: #fc5c7d;
+      border: none;
+      border-radius: 6px;
+      color: white;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .confession-box button:hover {
+      background: #e04c6e;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Spill the Beans</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="profile.html">My Profile</a>
+    </nav>
+  </header>
+
+  <div class="dashboard-container">
+    <aside class="sidebar">
+      <h3>Navigation</h3>
+      <ul>
+        <li><a href="dashboard.html">Dashboard</a></li>
+        <li><a href="private-rooms.html">Private Rooms</a></li>
+        <li><a href="live-confessions.html">Live Confessions</a></li>
+      </ul>
+    </aside>
+    <main class="main-panel">
+      <h2>Welcome to the Dashboard</h2>
+      <div class="confession-box">
+        <textarea rows="5" placeholder="Spill your beans..."></textarea>
+        <button>Post Confession</button>
+      </div>
+    </main>
+  </div>
+</body>
