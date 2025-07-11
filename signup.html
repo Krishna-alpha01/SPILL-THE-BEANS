@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up - Spill the Beans</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #0f101b;
+      color: #eee;
+      font-family: 'Nunito', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .signup-box {
+      background: #1b1c2d;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      width: 360px;
+      text-align: center;
+    }
+    h2 {
+      color: #6a82fb;
+      margin-bottom: 1.5rem;
+    }
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 0.75rem;
+      margin: 0.6rem 0;
+      border: none;
+      border-radius: 6px;
+      background: #2a2b45;
+      color: #fff;
+    }
+    .btn-primary {
+      width: 100%;
+      padding: 0.75rem;
+      margin-top: 1rem;
+      background: #6a82fb;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .btn-primary:hover {
+      background: #586bd6;
+    }
+    .login-link {
+      margin-top: 1.5rem;
+      font-size: 0.9rem;
+    }
+    .login-link a {
+      color: #fc5c7d;
+      text-decoration: none;
+    }
+    .login-link a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="signup-box">
+    <h2>Create Your Account</h2>
+    <form onsubmit="event.preventDefault(); alert('Sign up successful! Redirecting...'); window.location.href='index.html';">
+      <input type="text" placeholder="Username" required>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <button class="btn-primary" type="submit">Sign Up</button>
+    </form>
+    <div class="login-link">
+      <p>Already have an account? <a href="login.html">Login here</a></p>
+    </div>
+  </div>
+</body>
