@@ -1,0 +1,107 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - Spill the Beans</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background: #0f101b;
+      color: #eee;
+      font-family: 'Nunito', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .login-box {
+      background: #1b1c2d;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+      width: 340px;
+      text-align: center;
+    }
+    h2 {
+      color: #6a82fb;
+      margin-bottom: 1.5rem;
+    }
+    input[type="email"], input[type="password"] {
+      width: 100%;
+      padding: 0.75rem;
+      margin: 0.75rem 0;
+      border: none;
+      border-radius: 6px;
+      background: #2a2b45;
+      color: #fff;
+    }
+    .btn-primary {
+      width: 100%;
+      padding: 0.75rem;
+      margin-top: 1rem;
+      background: #fc5c7d;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+    .btn-primary:hover {
+      background: #e04c6e;
+    }
+    .social-login {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      margin-top: 1.5rem;
+    }
+    .social-login p {
+      color: #aaa;
+      margin-bottom: 0.25rem;
+    }
+    .social-login button {
+      background: #6a82fb;
+      padding: 0.7rem;
+      border: none;
+      border-radius: 6px;
+      color: #fff;
+      font-weight: bold;
+      cursor: pointer;
+      width: 100%;
+    }
+    .signup-link {
+      margin-top: 1.5rem;
+      font-size: 0.9rem;
+    }
+    .signup-link a {
+      color: #6a82fb;
+      text-decoration: none;
+    }
+    .signup-link a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-box">
+    <h2>Login to Spill the Beans</h2>
+    <form onsubmit="event.preventDefault(); alert('Login successful! Redirecting...'); window.location.href='index.html';">
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <button class="btn-primary" type="submit">Login</button>
+    </form>
+
+    <div class="social-login">
+      <p>or continue with</p>
+      <button onclick="alert('Google login not yet integrated')">Login with Google</button>
+      <button onclick="alert('Phone login not yet integrated')">Login with Phone</button>
+    </div>
+
+    <div class="signup-link">
+      <p>Don’t have an account? <a href="signup.html">Sign up here</a></p>
+    </div>
+  </div>
+</body>
