@@ -4,6 +4,17 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Spill the Beans - Home</title>
   <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+  <script>
+    // Redirect to login if not authenticated
+    document.addEventListener("DOMContentLoaded", function () {
+      const allowedPaths = ['index.html', '/', '', 'signup.html', 'about.html'];
+      const isLoggedIn = sessionStorage.getItem("isLoggedIn") === "true";
+      const path = window.location.pathname.split("/").pop();
+      if (!isLoggedIn && !allowedPaths.includes(path)) {
+        window.location.href = "login.html";
+      }
+    });
+  </script>
   <style>
     body {
       font-family: 'Nunito', sans-serif;
